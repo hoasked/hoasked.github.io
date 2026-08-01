@@ -1,9 +1,184 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My GitHub Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoasked - CV</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #3d4144;
+            background-color: #ffffff;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .container {
+            display: flex;
+            gap: 50px;
+        }
+
+        .sidebar {
+            flex: 1;
+            max-width: 240px;
+            position: sticky;
+            top: 40px;
+            height: fit-content;
+        }
+        .avatar-placeholder {
+            width: 150px;
+            height: 150px;
+            background-color: #e9ecef;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .sidebar h2 {
+            font-size: 1.4rem;
+            color: #1c1d1f;
+            margin: 0 0 5px 0;
+            border: none;
+            padding: 0;
+        }
+        .sidebar .tagline {
+            font-size: 0.9rem;
+            color: #7a8288;
+            margin-bottom: 20px;
+        }
+        .links-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            border-top: 1px solid #f2f3f3;
+            padding-top: 15px;
+        }
+        .links-list li {
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+        .links-list a {
+            color: #495156;
+            text-decoration: none;
+        }
+        .links-list a:hover {
+            text-decoration: underline;
+        }
+
+        .main-content {
+            flex: 3;
+        }
+        h1 {
+            font-size: 2.2rem;
+            color: #1c1d1f;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 1.3rem;
+            color: #1c1d1f;
+            border-bottom: 2px solid #f2f3f3;
+            padding-bottom: 8px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cv-entry {
+            margin-bottom: 25px;
+        }
+        .cv-entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+        .job-title {
+            font-weight: bold;
+            color: #1c1d1f;
+        }
+        .company {
+            color: #495156;
+            font-weight: normal;
+        }
+        .date {
+            font-size: 0.9rem;
+            color: #7a8288;
+            white-space: nowrap;
+        }
+        ul {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                gap: 30px;
+            }
+            .sidebar {
+                max-width: 100%;
+                position: relative;
+                top: 0;
+                border-bottom: 1px solid #f2f3f3;
+                padding-bottom: 20px;
+            }
+            .avatar-placeholder {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello World! Welcome to my website.</h1>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="avatar-placeholder"></div>
+            <h2>Danil Aleksiuk</h2>
+            <div class="tagline">Blender Specialist</div>
+            
+            <ul class="links-list">
+                <li>📍 Moscow, Russia</li>
+                <li>💼 <a href="https://create.roblox.com/talent/creators/562981756">Past Works</a></li>
+                <li>🐙 <a href="https://github.com/hoasked">GitHub</a></li>
+                <li>📧 <a href="t0257354@gmail.com">Email</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <h1>Biography & Experience</h1>
+            
+            <section>
+                <p>An intermediate blender specialist with a year of actual working experience. Open to new projects of any difficulty, ready to cooperate and negotiate, make changes to the model if requested. Able to make a wide variety of models, from cars and trains to animals and general props. C1 English proficiency level.</p>
+            </section>
+
+            <section>
+                <h2>Work Experience</h2>
+                
+                <div class="cv-entry">
+                    <div class="cv-entry-header">
+                        <span class="job-title">Freelance Blender Modeler</span>
+                        <span class="date">2022 - Present</span>
+                    </div>
+                    <ul>
+                        <li>Completed many commisions of different price ranges with strict deadlines.</li>
+                        <li>All clients were statisfied by the results, often requesting one or no changes.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>Skills</h2>
+                <ul>
+                    <li><strong>Core Competencies:</strong> Modeling, Sculpting, Texturing, Animation</li>
+                    <li><strong>Tools & Systems:</strong> Blender, Python</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
 </body>
 </html>
