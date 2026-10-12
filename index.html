@@ -211,38 +211,37 @@
         .lang-modal-content {
             background: #7b94c7;
             color: #faf4cd;
-            padding: 32px 40px;
-            border-radius: 16px;
+            padding: 20px 28px;
+            border-radius: 12px;
             text-align: center;
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
-            max-width: 360px;
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.3);
+            max-width: 280px;
             width: 90%;
         }
         .lang-modal-content h2 {
-            margin: 0 0 8px 0;
-            font-size: 1.4rem;
+            margin: 0 0 16px 0;
+            font-size: 1.05rem;
             border: none;
             text-transform: none;
             letter-spacing: 0;
             color: #faf4cd;
+            font-weight: 600;
         }
         .lang-modal-content p {
-            margin: 0 0 24px 0;
-            opacity: 0.9;
-            font-size: 0.95rem;
+            display: none;
         }
         .lang-modal-buttons {
             display: flex;
-            gap: 12px;
+            gap: 10px;
             justify-content: center;
         }
         .lang-modal-btn {
             background: #faf4cd;
             color: #3a4a6b;
             border: none;
-            padding: 12px 28px;
-            border-radius: 10px;
-            font-size: 1rem;
+            padding: 8px 18px;
+            border-radius: 8px;
+            font-size: 0.9rem;
             font-weight: 600;
             cursor: pointer;
             transition: transform 0.15s ease, box-shadow 0.15s ease;
@@ -284,8 +283,8 @@
     <!-- Language selection -->
     <div id="lang-modal" role="dialog" aria-labelledby="lang-modal-title" aria-modal="true">
         <div class="lang-modal-content">
-            <h2 id="lang-modal-title">Choose language / Выберите язык</h2>
-            <p>Select your preferred language</p>
+            <h2 id="lang-modal-title">Select your language</h2>
+            <p></p>
             <div class="lang-modal-buttons">
                 <button class="lang-modal-btn" data-lang="en">English</button>
                 <button class="lang-modal-btn" data-lang="ru">Русский</button>
@@ -461,5 +460,4 @@
         });
     </script>
 </body>
-                                                                    </html>
-                                                                    
+</html>
